@@ -229,7 +229,7 @@ export default function Home() {
               size="lg"
               className="bg-white text-[#232F3E] hover:bg-white/90"
             >
-              <Link href="/contact-us">
+              <Link href="/join-us">
                 Join Now
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>

@@ -4,62 +4,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Book, FileText, Video, Code, Download, ExternalLink, GraduationCap, BookOpen } from 'lucide-react'
-
-const resources = {
-  learning: [
-    {
-      title: "AWS Fundamentals Course",
-      description: "Learn the basics of AWS services and cloud computing",
-      icon: Book,
-      link: "#"
-    },
-    {
-      title: "Cloud Practitioner Pathway",
-      description: "Prepare for AWS Cloud Practitioner certification",
-      icon: GraduationCap,
-      link: "#"
-    },
-    {
-      title: "Technical Documentation",
-      description: "Access AWS service documentation and guides",
-      icon: FileText,
-      link: "#"
-    },
-    {
-      title: "Video Tutorials",
-      description: "Watch step-by-step AWS service tutorials",
-      icon: Video,
-      link: "#"
-    }
-  ],
-  tools: [
-    {
-      title: "AWS CLI Guide",
-      description: "Learn to use the AWS Command Line Interface",
-      icon: Code,
-      link: "#"
-    },
-    {
-      title: "SDK Examples",
-      description: "Sample code for various AWS services",
-      icon: Download,
-      link: "#"
-    },
-    {
-      title: "AWS Workshop Portal",
-      description: "Interactive workshops and labs",
-      icon: ExternalLink,
-      link: "#"
-    },
-    {
-      title: "Study Materials",
-      description: "Certification study guides and practice exams",
-      icon: BookOpen,
-      link: "#"
-    }
-  ]
-}
+import { resources } from '@/data/resources'
 
 export default function Resources() {
   return (
@@ -106,7 +51,7 @@ export default function Resources() {
                     <CardContent>
                       <CardDescription className="mb-4">{resource.description}</CardDescription>
                       <Button asChild variant="outline" className="w-full">
-                        <Link href={resource.link}>Access Resource</Link>
+                        <Link href={resource.link} target='_blank' >Access Resource</Link>
                       </Button>
                     </CardContent>
                   </Card>
@@ -143,7 +88,7 @@ export default function Resources() {
                     <CardContent>
                       <CardDescription className="mb-4">{tool.description}</CardDescription>
                       <Button asChild variant="outline" className="w-full">
-                        <Link href={tool.link}>Access Tool</Link>
+                        <Link href={tool.link} target='_blank'>Access Tool</Link>
                       </Button>
                     </CardContent>
                   </Card>

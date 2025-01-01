@@ -4,7 +4,8 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import ContactForm from '@/components/contact-form'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { MapPin, Phone, Mail, MessageSquare } from 'lucide-react'
+import { MessageSquare } from 'lucide-react'
+import { contacts } from '@/data/contact-us'
 
 export default function ContactUs() {
   return (
@@ -37,23 +38,7 @@ export default function ContactUs() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: MapPin,
-                title: "Visit Us",
-                content: "Faculty of Science,\nUniversity of Kelaniya,\nDalugama, Sri Lanka",
-              },
-              {
-                icon: Phone,
-                title: "Call Us",
-                content: "+94 123 456 789\n+94 789 456 123",
-              },
-              {
-                icon: Mail,
-                title: "Email Us",
-                content: "awscloudclub@kln.ac.lk\ninfo@awscloudclub.com",
-              },
-            ].map((item, index) => (
+            {contacts.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -98,7 +83,7 @@ export default function ContactUs() {
               className="h-[400px] rounded-lg overflow-hidden shadow-lg"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.5927518166273!2d79.91456661477567!3d7.0534398949331085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f86bd75870e5%3A0xee362e29dfeae2eb!2sUniversity%20of%20Kelaniya!5e0!3m2!1sen!2slk!4v1645523641755!5m2!1sen!2slk"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.7845032280488!2d79.91473789512455!3d6.97419502281288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2581cbe3d06f5%3A0x17c98045f95e4fe2!2sFaculty%20of%20Science%20University%20of%20Kelaniya!5e0!3m2!1sen!2slk!4v1735723482327!5m2!1sen!2slk"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -106,7 +91,6 @@ export default function ContactUs() {
                 loading="lazy"
               ></iframe>
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}

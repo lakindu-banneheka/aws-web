@@ -21,9 +21,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-[#FF9900]">AWS Community</a></li>
-              <li><a href="#" className="hover:text-[#FF9900]">AWS Educate</a></li>
-              <li><a href="#" className="hover:text-[#FF9900]">AWS Academy</a></li>
+              <li><a href="https://community.aws/" target='_blank' className="hover:text-[#FF9900]">AWS Community</a></li>
+              <li><a href="https://www.awseducate.com/" target='_blank' className="hover:text-[#FF9900]">AWS Educate</a></li>
+              <li><a href="https://www.awsacademy.com/" target='_blank' className="hover:text-[#FF9900]">AWS Academy</a></li>
             </ul>
           </div>
           <div>
