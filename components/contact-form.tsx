@@ -56,6 +56,7 @@ export default function ContactForm() {
         description: 'There was a problem sending your message. Please try again.',
         variant: 'destructive',
       })
+      console.error(error);
     } finally {
       setIsSubmitting(false)
     }

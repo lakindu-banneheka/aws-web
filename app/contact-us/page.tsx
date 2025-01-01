@@ -29,8 +29,8 @@ export default function ContactUs() {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center text-white"
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Do you have any questions?</h1>
-          <p className="text-xl opacity-90">We're here to help and answer any question you might have</p>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">{`Do you have any questions?`}</h1>
+          <p className="text-xl opacity-90">{`We're here to help and answer any question you might have`}</p>
         </motion.div>
       </section>
 
@@ -50,10 +50,10 @@ export default function ContactUs() {
                     <div className="mx-auto rounded-full bg-[#FF9900]/10 p-4 w-16 h-16 flex items-center justify-center mb-4">
                       <item.icon className="w-8 h-8 text-[#FF9900]" />
                     </div>
-                    <CardTitle className="text-xl mb-2">{item.title}</CardTitle>
+                    <CardTitle className="text-xl mb-2">{item?.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 whitespace-pre-line">{item.content}</p>
+                    <p className="text-gray-600 whitespace-pre-line">{item?.content}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -71,7 +71,7 @@ export default function ContactUs() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold mb-4">Let's Talk</h2>
+            <h2 className="text-3xl font-bold mb-4">{`Let's Talk`}</h2>
             <p className="text-xl text-gray-600">Send us your feedback</p>
           </motion.div>
 

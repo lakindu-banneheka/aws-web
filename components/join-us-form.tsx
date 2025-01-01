@@ -73,6 +73,7 @@ export default function JoinUsForm() {
         description: 'There was a problem submitting your application. Please try again.',
         variant: 'destructive',
       })
+      console.error(error);
     } finally {
       setIsSubmitting(false)
     }

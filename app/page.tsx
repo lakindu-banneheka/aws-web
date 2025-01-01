@@ -1,11 +1,11 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Cloud, Users, Zap, Award, ArrowRight } from 'lucide-react'
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
   })
   
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8])
+  // const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8])
   const position = useTransform(scrollYProgress, (pos) => {
     return `${pos * 50}% 50%`
   })
