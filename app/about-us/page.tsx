@@ -38,25 +38,25 @@ export default function AboutUs() {
         transition={{ duration: 1 }}
       >
         <div className="absolute inset-0 z-0">
-          <Image 
-            src="/about-us-background.jpg" 
-            alt="About Us background" 
-            layout="fill" 
-            objectFit="cover" 
+          <Image
+            src="/about-us-background.jpg"
+            alt="About Us background"
+            layout="fill"
+            objectFit="cover"
             quality={100}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
         </div>
         <div className="container mx-auto px-4 z-10 relative">
-          <motion.h1 
+          <motion.h1
             className="text-5xl font-bold text-center text-white mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            About AWS Cloud Club
+            <br></br>About AWS Cloud Club
           </motion.h1>
-          <motion.p 
+          <motion.p
             className="text-xl text-center text-white/90 mb-12 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

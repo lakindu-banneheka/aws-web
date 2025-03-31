@@ -34,10 +34,10 @@ export default function Home() {
           style={{ backgroundPosition: position }}
         >
           <Image 
-            src="/hero-background.jpg" 
+            src="/hero-background2.jpg" 
             alt="Cloud computing background" 
             layout="fill" 
-            objectFit="cover" 
+            objectFit="cover"
             quality={100} 
             priority
           />
@@ -71,7 +71,7 @@ export default function Home() {
               <Button 
                 asChild 
                 size="lg" 
-                variant="outline" 
+                variant="outline"
                 className="border-white bg-transparent text-white hover:bg-white hover:text-[#232F3E]"
               >
                 <Link href="/contact-us">Contact Us</Link>

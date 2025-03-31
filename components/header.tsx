@@ -21,17 +21,19 @@ export default function Header() {
 
   return (
     <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className="fixed w-full z-50 bg-white transition-all duration-300 shadow-lg"
+      style={{ backgroundImage: 'url(/)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+      /*className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-white/80 nav-blur shadow-lg' 
           : 'bg-transparent'
-      }`}
+      }`}*/
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Image 
-              src="/aws-logo.png" 
+              src="/aws_logo.png"
               alt="AWS Cloud Club Logo" 
               width={40} 
               height={40} 
