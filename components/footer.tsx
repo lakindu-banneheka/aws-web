@@ -29,10 +29,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-[#FF9900]"><Facebook size={24} /></a>
+              <a href="https://www.facebook.com/people/AWS-Cloud-Club-of-University-of-Kelaniya/61568175273436/" target='_blank' className="hover:text-[#FF9900]"><Facebook size={24} /></a>
               <a href="#" className="hover:text-[#FF9900]"><Twitter size={24} /></a>
-              <a href="#" className="hover:text-[#FF9900]"><Linkedin size={24} /></a>
-              <a href="#" className="hover:text-[#FF9900]"><Youtube size={24} /></a>
+              <a href="https://www.linkedin.com/company/aws-cloud-club-of-university-of-kelaniya" target='_blank' className="hover:text-[#FF9900]"><Linkedin size={24} /></a>
+              <a href="https://youtube.com/@awscloudclubkelaniya?si=iIQeppQfq_Hd2fNM" target='_blank' className="hover:text-[#FF9900]"><Youtube size={24} /></a>
             </div>
           </div>
         </div>
